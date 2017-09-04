@@ -87,8 +87,6 @@ See below for a complete list of widgets.
 
 [Rolling Log](#rolling-log)
 
-[Picture](#picture)
-
 [Sparkline](#sparkline)
 
 [Table](#table)
@@ -275,24 +273,6 @@ Please see the **examples/lcd.js** for an example. The example provides keybindi
       , label: 'Server Log'})
    log.log("new log line")
 `````
-
-
-### Picture
-
-(Also check the new blessed [image implementation](https://github.com/chjj/blessed#image-from-box) which has several benefits over this one.)
-
-<img src="./docs/images/picture.png" alt="log" width="180">
-
-`````javascript
-    var pic = contrib.picture(
-       { file: './flower.png'
-       , cols: 25
-       , onReady: ready})
-    function ready() {screen.render()}
-`````
-
-note: only png images are supported
-
 
 ### Sparkline
 
